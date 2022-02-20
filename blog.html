@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Starter Template</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Tiny Slider -->
+    <link rel="stylesheet" href="/assets/styles/vendors/tiny-slider.css">
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="/assets/styles/vendors/bootstrap.min.css">
+    <!-----------Style CSS---------------->
+    <link rel="stylesheet" href="/assets/styles/scss/style.css">
+</head>
+<!-- https://www.devsnews.com/wp/roxce/blog/?fbclid=IwAR2Z9ASsFy3PhlxPm6ojB-eFUHH9hWp11xaQJdQ3DR3-NCAHwkRQB8JT9bc -->
+
+<body>
+    <!-- header -->
+    <header>
+
+        <div class="container-fluid top-header-wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="top-header">
+                        <ul class="list-unstyled d-flex mb-0">
+                            <li> <i class="fas fa-map-marker-alt"></i> 58 Howard Street #2 San Francisco</li>
+                            <li> <i class="fas fa-envelope-square"></i>info@example.com</li>
+                            <li> <i class="fas fa-phone"></i> 02 (555) 520 890</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="nav-container">
+            <div class="container-fluid px-5">
+                <div class="nav-wrapper row">
+                    <div class="logo col-xl-2 col-lg-2 col-6">
+                        <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Logo"
+                                class="img-fluid logo"></a>
+                    </div>
+
+                    <div class="main-nav col-xl-6 col-lg-6 d-none d-lg-block">
+                        <ul class="list-unstyled d-md-flex">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Servicess</a></li>
+                            <li class="has-children"><a href="#">Pages</a>
+                                <ul class="dropdown-items pb-3 pt-2">
+                                    <li class="mt-4"><a href="#">Categories</a></li>
+                                    <li><a href="#">styles</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children"><a href="#">Blog</a>
+                                <ul class="dropdown-items pb-3 pt-2">
+                                    <li class="mt-4"><a href="#">Blog</a></li>
+                                    <li><a href="#">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-xl-4 col-lg-4 right-nav col-6">
+                        <div class="d-flex justify-content-end">
+                            <div class="social-nav-links d-flex flex-column justify-content-center d-none d-lg-block">
+                                <ul class="list-unstyled d-flex align-content-center p-0 m-0">
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="humberger-btn ms-4 ">
+                                <button type="button" id="targetModal">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- Modal -->
+        <div class="navigation-modal shadow-lg ">
+            <div class="navigation-wrapper">
+                <!-- Modal Content -->
+                <div class="modal-content-area">
+                    <div class="modal-top d-flex justify-content-between">
+                        <img src="assets/img/logo.png" class="img-fluid" alt="logo" class="logo">
+                        <button type="button" class="modalClose"><span>&times;</span></button>
+                    </div>
+                    <div class="search-form border-bottom pt-3 mb-3">
+                        <form action="#">
+                            <div class="input-group">
+                                <input type="text" placeholder="what are you searching for?" class="form-control">
+                                <div class="input-group-text">
+                                    <span class="fas fa-search "></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="description">
+                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                            was born and will give you
+                            a complete account of the system and expound the actual teachings of the great explore</p>
+                    </div>
+                    <!-- Mobile Navigation -->
+                    <nav class="mobile-nav">
+                        <ul class="list-unstyled ">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Servicess</a>
+                            <div class="d-flex justify-content-between w-100">
+                                <a href="#">pages</a> <span class="fa fa-plus"></span>
+                            </div>
+                                <ul class="dropdown-items pb-3 pt-2 list-unstyled">
+                                    <li ><a href="#">Categories</a></li>
+                                    <li><a href="#">styles</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                              <div class="d-flex justify-content-between w-100">
+                                  <a href="#">Blog</a> <span class="fa fa-plus"></span>
+                                </div>
+                                <ul class="dropdown-items pb-3 pt-2 list-unstyled">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+
+
+
+                    <div class="gallary d-none d-lg-block">
+                        <img src="assets/img/sidebar-banner-1.jpg" alt="img" class="img-fluid">
+                        <img src="assets/img/blog-big-1-1.jpg" alt="img" class="img-fluid">
+                        <img src="assets/img/blog-big-1-1.jpg" alt="img" class="img-fluid">
+                        <img src="assets/img/blog-big-5.jpg" alt="img" class="img-fluid">
+                        <img src="assets/img/blog-big-3.jpg" alt="img" class="img-fluid">
+                        <img src="assets/img/blog-big-1-1.jpg" alt="img" class="img-fluid">
+                    </div>
+                    <!-- Gm Error -->
+                    <div class="gm-error">
+                        <div class="gm-error-icon">
+                            <div><i class="fas fa-exclamation"></i></div>
+                        </div>
+                        <div class="gm-error-title">Oops! Something went <br> wrong.</div>
+                        <p class="gm-error-info">This page didn't load Google Maps correctly. See the JavaScript console
+                            for technical details.</p>
+                    </div>
+                    <!-- contact info -->
+                    <div class="sidebar-contact-info">
+                        <h3>Contact Info Title</h3>
+                        <ul class="list-unstyled ">
+                            <li><i class="fas fa-map-marker-alt icon"></i> 12/A, Mirnada City Tower, NYC</li>
+                            <li><i class="fas fa-phone icon"></i> 12/A, Mirnada City Tower, NYC</li>
+                            <li><i class="fas fa-envelope icon"></i> 12/A, Mirnada City Tower, NYC</li>
+                        </ul>
+                    </div>
+                    <div class="social-nav-links social-modal">
+                        <ul class="list-unstyled d-flex align-content-center">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <!-- Main  -->
+    <main>
+
+        <section class="hero" style="background-image:
+            linear-gradient(120deg,rgba(0,0,0,0.6),rgba(0,0,0,0.4)),
+             url('./assets/img/hero.jpg');
+            ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="hero-container ">
+                            <h3 class="page-title">Blog</h3>
+                            <!-- Breadcrumb -->
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item" aria-current="page">Home</li>
+                                    <li class="breadcrumb-item active" aria-current="page" class="active">Blog</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Main Content -->
+        <section id="mainContent">
+            <div class="container-lg container-fluid">
+                <div class="row g-5 pb-5">
+                    <div class="col-md-8 col-sm-12">
+                        <article class="standard shadow">
+                            <div class="post-thumbnails">
+                                <img src="./assets/img/blog-big-1-1.jpg" alt="blog" class="img-fluid">
+                            </div>
+                            <div class="post-contents">
+                                <div class="post-meta">
+                                    <ul class="list-unstyled d-flex">
+                                        <li><i class="fas fa-calendar-check"></i> November 29, 2021</li>
+                                        <li><i class="fas fa-user"></i> Roxce</li>
+                                        <li><i class="fas fa-comment"></i> No Comments</li>
+                                    </ul>
+                                </div>
+                                <h3 class="post-title">
+                                    <a href="#">How to Clean Your Home Faster and More Efficiently</a>
+                                </h3>
+                                <p class="post-excerpt my-4">
+                                    Nancy boy Charles down the pub get stuffed mate easy peasy brown bread car boot
+                                    squiffy loo, blimey arse over tit it’s
+                                    your round cup of char horse play chimney pot old. Chip shop bonnet barney owt to do
+                                    with me what a plonker hotpot loo
+                                    that gormless off his nut a blinding shot Harry […]
+                                </p>
+                                <button class="btn-md">Read More <span></span> </button>
+                            </div>
+                        </article>
+                        <article class="video shadow">
+                            <div class="post-thumbnails">
+                                <img src="./assets/img/blog-big-3.jpg" alt="blog" class="img-fluid">
+                                <!-- Youtube Icon -->
+                                <div class="modal-trigger">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#youtubeVideo"><i
+                                            class="fab fa-youtube"></i></button>
+                                </div>
+                                <!-- Modal -->
+                                <!-- Modal -->
+                                <div class="modal fade" id="youtubeVideo" tabindex="-1" aria-labelledby="youtubeVideo"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <iframe height="315" width="560">
+                                                    src="https://www.youtube.com/embed/9998fVYKt6w"
+                                                    title="YouTube video player" frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                                                    gyroscope; picture-in-picture"
+                                                    allowfullscreen>
+                                                </iframe>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="targetItem">Modal title</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h2>Hello</h2>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-contents">
+                                <div class="post-meta">
+                                    <ul class="list-unstyled d-flex">
+                                        <li><i class="fas fa-calendar-check"></i> November 29, 2021</li>
+                                        <li><i class="fas fa-user"></i> Roxce</li>
+                                        <li><i class="fas fa-comment"></i> No Comments</li>
+                                    </ul>
+                                </div>
+                                <h3 class="post-title">
+                                    <a href="#">How to Clean Your Home Faster and More Efficiently</a>
+                                </h3>
+                                <p class="post-excerpt my-4">
+                                    Nancy boy Charles down the pub get stuffed mate easy peasy brown bread car boot
+                                    squiffy loo, blimey arse over tit it’s
+                                    your round cup of char horse play chimney pot old. Chip shop bonnet barney owt to do
+                                    with me what a plonker hotpot loo
+                                    that gormless off his nut a blinding shot Harry […]
+                                </p>
+                                <button class="btn-md">Read More <span></span></button>
+
+                            </div>
+                        </article>
+                        <article class="shadow">
+                            <div class="slider-wrapper">
+                                <div class="slider1">
+                                    <div class="post-thumbnails">
+                                        <img src="./assets/img/blog-big-1-1.jpg" alt="blog" class="img-fluid">
+                                    </div>
+                                    <div class="post-thumbnails">
+                                        <img src="./assets/img/blog-big-4.jpg" alt="blog" class="img-fluid">
+                                    </div>
+                                    <div class="post-thumbnails">
+                                        <img src="./assets/img/blog-big-5.jpg" alt="blog" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="controls-wrapper">
+                                    <div class="controls">
+                                        <button><span class="fas fa-arrow-left"></span></button>
+                                        <button><span class="fas fa-arrow-right"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-contents">
+                                <div class="post-meta">
+                                    <ul class="list-unstyled d-flex">
+                                        <li><i class="fas fa-calendar-check"></i> November 29, 2021</li>
+                                        <li><i class="fas fa-user"></i> Roxce</li>
+                                        <li><i class="fas fa-comment"></i> No Comments</li>
+                                    </ul>
+                                </div>
+                                <h3 class="post-title">
+                                    <a href="#">How to Clean Your Home Faster and More Efficiently</a>
+                                </h3>
+                                <p class="post-excerpt my-4">
+                                    Nancy boy Charles down the pub get stuffed mate easy peasy brown bread car boot
+                                    squiffy loo, blimey arse over tit it’s
+                                    your round cup of char horse play chimney pot old. Chip shop bonnet barney owt to do
+                                    with me what a plonker hotpot loo
+                                    that gormless off his nut a blinding shot Harry […]
+                                </p>
+                                <button class="btn-md">Read More <span></span></button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4 col-sm-12 sidebar">
+                        <!-- sidebar -->
+                        <aside class="widget search-widget">
+                            <form action="#">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="search">
+                                    <button type="submit" class="input-group-text"><span
+                                            class="fa fa-search"></span></button>
+                                </div>
+                            </form>
+                        </aside>
+                        <aside class="widget recent-post-widget">
+                            <div class="widget-wrapper">
+                                <div class="widget-title">
+                                    <h3>Recent Post</h3>
+                                </div>
+                                <div class="single-post">
+                                    <div class="rec-post-thumb me-3">
+                                        <img src="assets/img/blog-big-1-1.jpg" class="img-fluid" alt="blog">
+                                    </div>
+                                    <div class="rec-post-dec">
+                                        <div class="ms-2">
+                                            <h3>
+                                                <a href="#">How to Clean Your Home Faster</a>
+                                            </h3>
+                                            <p>November 29, 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-post">
+                                    <div class="rec-post-thumb me-3">
+                                        <img src="assets/img/blog-big-3.jpg" class="img-fluid" alt="blog">
+                                    </div>
+                                    <div class="rec-post-dec">
+                                        <div class="ms-2">
+                                            <h3>
+                                                <a href="#">How to Clean Your Home Faster</a>
+                                            </h3>
+                                            <p>November 29, 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-post">
+                                    <div class="rec-post-thumb me-3">
+                                        <img src="assets/img/blog-big-5.jpg" class="img-fluid" alt="blog">
+                                    </div>
+                                    <div class="rec-post-dec">
+                                        <div class="ms-2">
+                                            <h3>
+                                                <a href="#">How to Clean Your Home Faster</a>
+                                            </h3>
+                                            <p>November 29, 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside class="widget categories-widget">
+                            <div class="widget-wrapper">
+                                <div class="widget-title">
+                                    <h3>Categories</h3>
+                                </div>
+                                <div class="widget-body">
+                                    <ul class="list-unstyled">
+                                        <li class="border-bottom"><a href="#">Business</a></li>
+                                        <li class="border-bottom"><a href="#">Cleaning</a></li>
+                                        <li class="border-bottom"><a href="#">Consultant</a></li>
+                                        <li class="border-bottom"><a href="#">Creative</a></li>
+                                        <li class="border-bottom"><a href="#">Technology</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside class="widget categories-widget">
+                            <div class="widget-wrapper">
+                                <div class="widget-title">
+                                    <h3>Tags</h3>
+                                </div>
+                                <div class="tag-btn">
+                                    <a href="#" class="rox-sm-btn">Business</a>
+                                    <a href="#" class="rox-sm-btn">Clean</a>
+                                    <a href="#" class="rox-sm-btn">Consult</a>
+                                    <a href="#" class="rox-sm-btn">Design</a>
+                                    <a href="#" class="rox-sm-btn">Kit</a>
+                                    <a href="#" class="rox-sm-btn">room</a>
+                                    <a href="#" class="rox-sm-btn">tech</a>
+                                    <a href="#" class="rox-sm-btn">useability</a>
+                                    <a href="#" class="rox-sm-btn">ux</a>
+                                </div>
+                            </div>
+                        </aside>
+                        <!-- Sidebar -->
+                        <aside class="sidebar-bannar">
+                            <div class="bannar-wrapper">
+                                <img src="assets/img/sidebar-banner-1.jpg" class="img-fluid" alt="sidebar img">
+                                <div class="bannar-text">
+                                    <p>Add bannar</p>
+                                </div>
+                            </div>
+
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pagination -->
+        <div class="container pagination-wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pagination-links">
+                        <ul class="list-unstyled d-flex">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row pb-5 footer-border-bottom">
+                <div class="col-md-3">
+                    <div class="footer-widget custom-html-widget">
+                        <div class="footer-widget-title">
+                            <h3>About Company</h3>
+                        </div>
+                        <div class="footer-desc">
+                            <p>Sed ut perspiciati unde omnis iste natus error sit voluptatem accusantium emque
+                                laudantium totam rem aperiam</p>
+                        </div>
+                        <div class="footer-logo">
+                            <img src="assets/img/logo-white.png" class="img-fluid" alt="Footer Logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget footer-nav-widget">
+                        <div class="footer-widget-title">
+                            <h3>Quick Links</h3>
+                        </div>
+                        <nav class="social-links">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Residential Interior</a></li>
+                                <li><a href="#">Commercial Interior</a></li>
+                                <li><a href="#">Industrial Interior</a></li>
+                                <li><a href="#">Roof Servicing</a></li>
+                                <li><a href="#">Color Mixing</a></li>
+                                <li><a href="#">Painting & Decoration</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget custom-html-widget">
+                        <div class="footer-widget-title">
+                            <h3>Contact Us</h3>
+                        </div>
+                        <ul class="list-unstyled custom-html-widget-list">
+                            <li>
+                                <div class="widget-info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="widget-info-text">
+                                    <h4>Locations</h4>
+                                    <a href="#">30 Main Street, New York</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="widget-info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="widget-info-text">
+                                    <h4>Email Us</h4>
+                                    <a href="#">support@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="widget-info-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="widget-info-text">
+                                    <h4>Phone Us</h4>
+                                    <a href="#">+012 (344) 678 99</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget subscribe-widget">
+                        <div class="footer-widget-title">
+                            <h3>Newsletter</h3>
+                        </div>
+                        <div class="widget-body">
+                            <p>Sed ut perspiciati unde omnis iste natus error sit voluptatem accusantium</p>
+                            <form action="#">
+                                <input type="text" placeholder="enter your email">
+                                <button type="submit" class="rox-md-btn">Subscribe <i
+                                        class="fas fa-arrow-right"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="row footer-bottom">
+                <div class="col-md-6">
+                    <div class="social-nav-links">
+                        <ul class="list-unstyled d-flex ">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-end">&copy; 2021 Roxce All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Tiny Slider Js -->
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+// Base Files
+@import "./base/variable";
+@import "./base/typography";
+@import "./base/reset";
+//mixins
+@import "./mixins/mixin";
+//Components
+@import "./components/button";
+@import "./components/social_nav";
+@import "./components/post";
+@import "./components/pagination";
+//templates
+@import "./templates/header";
+@import "./templates/footer";
+@import "./templates/widget";
+@import "./templates/comments";
+//Animation
+@import "./animation/animation";
+//Pages
+@import "./pages/blog";
+@import "./pages/blogdetails";

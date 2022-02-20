@@ -1,0 +1,31 @@
+.comments-area {
+    h2 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+    textarea {
+        background-color: map-get($colors, dark);
+        border: none;
+        padding: 20px;
+        &::placeholder {
+            color: map-get($colors, secondary-gray);
+            font-size: map-get($font-size, xsm);
+            
+        }
+        &:focus {
+            outline: 2px solid map-get($colors, yellowColor);
+            box-shadow: none;
+        }
+    }
+    input{
+        padding:12px 20px;
+        text-transform: capitalize;
+        font-size: map-get($font-size, xsm );
+        color:map-get($colors, primary );
+        &:focus{
+            box-shadow: none;
+            outline: 2px solid map-get($colors, yellowColor );
+            border-color: transparent;
+        }
+    }
+}

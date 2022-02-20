@@ -1,0 +1,35 @@
+.pagination-wrapper{
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                display: block;
+                height: 50px;
+                width: 50px;
+                line-height: 50px;
+                margin: 0px 5px;
+                border:2px solid #f1f1f1;
+                border-radius: 7px;
+                text-align: center;
+                color:map-get($colors, icon-color );
+                font-weight: map-get($font-weight, semi-bold );
+                font-size: 18px;
+                transition: all ease-in-out 0.4s;
+                &:hover{
+                    background-color: map-get($colors, yellowColor );
+                    color:map-get($colors, secondary );
+                    border:2px solid map-get($colors,yellowColor );
+                }
+            }
+            &.active{
+                a{
+                    background-color: map-get($colors, yellowColor );
+                    color:map-get($colors, secondary );
+                    border:2px solid map-get($colors,yellowColor );
+                    cursor:text;
+                }
+            }
+        }
+    }
+    margin-bottom: 100px;
+}

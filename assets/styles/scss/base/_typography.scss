@@ -1,0 +1,18 @@
+body {
+    font-family: "Hind", sans-serif;
+}
+$list: (h1, map-get($font-size, "xl"), map-get($font-weight, "regular"), map-get($colors, "primary")),
+    (h2, map-get($font-size, "xl"), map-get($font-weight, "regular"), map-get($colors, "primary")),
+    (h3, map-get($font-size, "xl"), map-get($font-weight, "regular"), map-get($colors, "primary")),
+    (h4, map-get($font-size, "xlg"), map-get($font-weight, "medium"), map-get($colors, "primary")),
+    (h5, map-get($font-size, "xl"), map-get($font-weight, "regular"), map-get($colors, "primary")),
+    (h6, map-get($font-size, "xl"), map-get($font-weight, "regular"), map-get($colors, "primary")),
+    (p, map-get($font-size, "sm"), map-get($font-weight, "regular"), map-get($colors, "secondary-gray")),
+    (a, map-get($font-size, "sm"), map-get($font-weight, "regular"), map-get($colors, "primary"));
+@each $tagname, $font-size, $font-weight, $color in $list {
+    #{$tagname} {
+        font-size: $font-size;
+        font-weight: $font-weight;
+        color: $color;
+    }
+}

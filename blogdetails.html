@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Starter Template</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="/assets/styles/vendors/bootstrap.min.css">
+    <!-----------Style CSS---------------->
+    <link rel="stylesheet" href="/assets/styles/scss/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+     
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="top-header">
+                        <ul class="list-unstyled d-flex mb-0">
+                            <li> <i class="fas fa-map-marker-alt"></i> 58 Howard Street #2 San Francisco</li>
+                            <li> <i class="fas fa-envelope-square"></i>info@example.com</li>
+                            <li> <i class="fas fa-phone"></i> 02 (555) 520 890</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg primary-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Logo" class="img-fluid logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Item 1</a></li>
+                                <li><a class="dropdown-item" href="#">Item 2</a></li>
+                                <li><a class="dropdown-item" href="#">Item 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Service</a></li>
+                                <li><a class="dropdown-item" href="#">Services Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="blogdetails.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <div class="social-nav-links">
+                        <ul class="list-unstyled d-flex align-content-center">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="humberger-btn ms-4 me-5">
+                        <button type="button" id="targetModal">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+            <!-- Navigation Modal -->
+            <div class="navigation-modal shadow-lg">
+                <div>
+                    <!-- Modal Content -->
+                    <div class="modal-content-area">
+                        <div class="modal-top d-flex justify-content-between">
+                            <img src="assets/img/logo.png" class="img-fluid" alt="logo">
+                            <button type="button" class="close"><span>&times;</span></button>
+                        </div>
+                        <div class="description">
+                            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                                was born and will give you
+                                a complete account of the system and expound the actual teachings of the great explore</p>
+                        </div>
+                        <div class="gallary">
+                            <img src="assets/img/sidebar-banner-1.jpg" alt="img" class="img-fluid">
+                            <img src="assets/img/blog-big-1-1.jpg" alt="img" class="img-fluid">
+                            <img src="assets/img/blog-big-1-1.jpg" alt="img" class="img-fluid">
+                            <img src="assets/img/blog-big-5.jpg" alt="img" class="img-fluid">
+                            <img src="assets/img/blog-big-3.jpg" alt="img" class="img-fluid">
+                            <img src="assets/img/blog-big-1-1.jpg" alt="img" class="img-fluid">
+                        </div>
+                        <!-- Gm Error -->
+                        <div class="gm-error">
+                            <div class="gm-error-icon">
+                                <div><i class="fas fa-exclamation"></i></div>
+                            </div>
+                            <div class="gm-error-title">Oops! Something went <br> wrong.</div>
+                            <p class="gm-error-info">This page didn't load Google Maps correctly. See the JavaScript console
+                                for technical details.</p>
+                        </div>
+                        <!-- contact info -->
+                        <div class="sidebar-contact-info">
+                            <h3>Contact Info Title</h3>
+                            <ul class="list-unstyled ">
+                                <li><i class="fas fa-map-marker-alt icon"></i> 12/A, Mirnada City Tower, NYC</li>
+                                <li><i class="fas fa-phone icon"></i> 12/A, Mirnada City Tower, NYC</li>
+                                <li><i class="fas fa-envelope icon"></i> 12/A, Mirnada City Tower, NYC</li>
+                            </ul>
+                        </div>
+                        <div class="social-nav-links social-modal">
+                            <ul class="list-unstyled d-flex align-content-center">
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </header>
+    <!-- Main  -->
+    <main>
+        <section class="hero" style="background-image:
+            linear-gradient(120deg,rgba(0,0,0,0.6),rgba(0,0,0,0.4)),
+             url('./assets/img/hero.jpg');
+            ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="hero-container ">
+                            <h3 class="page-title">How to Clean Your Home Faster and More Efficiently</h3>
+                            <!-- Breadcrumb -->
+                            <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: ">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item" aria-current="page">Home</li>
+                                    <li class="breadcrumb-item active" aria-current="page" class="active">Blog</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Main Content -->
+        <section id="blogDetails">
+            <div class="container">
+                <div class="row g-5 pb-5 mb-5">
+                    <div class="col-md-8">
+                        <article class="standard post-details">
+                            <div class="post-thumbnails">
+                                <img src="./assets/img/blog-big-1-1.jpg" alt="blog" class="img-fluid">
+                            </div>
+                            <div class="post-contents mt-5">
+                                <div class="post-meta">
+                                    <ul class="list-unstyled d-flex">
+                                        <li><i class="fas fa-calendar-check"></i> November 29, 2021</li>
+                                        <li><i class="fas fa-user"></i> Roxce</li>
+                                        <li><i class="fas fa-comment"></i> No Comments</li>
+                                    </ul>
+                                </div>
+                                <p class="my-4">
+                                    Nancy boy Charles down the pub get stuffed mate easy peasy brown bread car boot
+                                    squiffy loo, blimey arse over tit it’s
+                                    your round cup of char horse play chimney pot old. Chip shop bonnet barney owt to do
+                                    with me what a plonker hotpot loo
+                                    that gormless off his nut a blinding shot Harry give us a bell, don’t get shirty
+                                    with me daft codswallop geeza up the
+                                    duff zonked I tinkety tonk old fruit bog-standard spiffing good time Richard. Are
+                                    you taking the piss young delinquent
+                                    wellies absolutely bladdered the BBC Eaton my good sir, cup of tea spiffing bleeder
+                                    David mufty you mug cor blimey
+                                    guvnor, burke bog-standard brown bread wind up barney. Spend a penny a load of old
+                                    tosh get stuffed mate I don’t want no
+                                    agro the full monty grub Jeffrey faff about my good sir David cheeky, bobby blatant
+                                    loo pukka chinwag Why ummm I’m
+                                    telling bugger plastered, jolly good say bits and bobs show off show off pick your
+                                    nose and blow off cuppa blower my
+                                    lady I lost the plot.
+                                </p>
+                                <blockquote>
+                                    <span class="fas fa-quote-right"></span>
+                                    <p>Tosser argy-bargy mush loo at public school Elizabeth up the duff buggered
+                                        chinwag on your bike mate don’t get shirty
+                                        with me super, Jeffrey bobby Richard cheesed off spend a penny a load of old
+                                        tosh blag horse.</p>
+                                    <p>
+                                        <cite>Kane Willamson</cite>
+                                    </p>
+                                </blockquote>
+                                <p class="my-4">Cheeky bugger cracking goal starkers lemon squeezy lost the plot pardon
+                                    me no biggie the BBC burke gosh boot so I said
+                                    wellies, zonked a load of old tosh bodge barmy skive off he legged it morish spend a
+                                    penny my good sir wind up
+                                    hunky-dory. Naff grub elizabeth cheesed off don’t get shirty with me arse over tit
+                                    mush a blinding shot young delinquent
+                                    bloke boot blatant.</p>
+                                <div>
+                                    <img src="assets/img/blog-big-5.jpg" alt="blog" class="img-fluid">
+                                </div>
+                                <h4 class="mt-3">Roxce is the only theme you will ever need</h4>
+                                <p>Are you taking the piss young delinquent wellies absolutely bladdered the Eaton my
+                                    good sir, cup of tea spiffing bleeder
+                                    David mufty you mug cor blimey guvnor, burke bog-standard brown bread wind up
+                                    barney. Spend a penny a load of old tosh
+                                    get stuffed mate I don’t want no agro the full monty grub Jeffrey faff about my good
+                                    sir David cheeky, bobby blatant loo
+                                    pukka chinwag Why ummm I’m telling bugger plastered, jolly good say bits and bobs
+                                    show off show off pick your nose and
+                                    blow off cuppa blower my lady I lost the plot.</p>
+                                <p>Cheeky bugger cracking goal starkers lemon squeezy lost the plot pardon me no biggie
+                                    the BBC burke gosh boot so I said
+                                    wellies, zonked a load of old tosh bodge barmy skive off he legged it morish spend a
+                                    penny my good sir wind up
+                                    hunky-dory. Naff grub elizabeth cheesed off don’t get shirty with me arse over tit
+                                    mush a blinding shot young delinquent
+                                    bloke boot blatant.</p>
+                            </div>
+                        </article>
+                        <!-- Blog Tags -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="blog-tags my-5">
+                                    <span>Post Tags :</span>
+                                    <a href="#" class="sm-btn">Design</a>
+                                    <a href="#" class="sm-btn">Room</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Comments Template -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="comments-area">
+                                    <h2>Leave Reply</h2>
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <textarea rows="6" class="form-control" placeholder="Write your comments here..."></textarea>
+                                            </div>
+                                            <div class="col-md-6 my-3">
+                                                <input type="text" placeholder="your name" class="form-control">
+                                            </div>
+                                            <div class="col-md-6 my-3">
+                                                <input type="email" placeholder="your email" class="form-control">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input type="text" placeholder="your website" class="form-control">
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <button type="submit" class="rox-md-btn">post comments</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 sidebar">
+                        <!-- sidebar -->
+                        <aside class="widget search-widget">
+                            <form action="#">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="search">
+                                    <button type="submit" class="input-group-text"><span
+                                            class="fa fa-search"></span></button>
+                                </div>
+                            </form>
+                        </aside>
+                        <aside class="widget recent-post-widget">
+                            <div class="widget-wrapper">
+                                <div class="widget-title">
+                                    <h3>Recent Post</h3>
+                                </div>
+                                <div class="single-post">
+                                    <div class="rec-post-thumb me-3">
+                                        <img src="assets/img/blog-big-1-1.jpg" class="img-fluid" alt="blog">
+                                    </div>
+                                    <div class="rec-post-dec">
+                                        <div class="ms-2">
+                                            <h3>
+                                                <a href="#">How to Clean Your Home Faster</a>
+                                            </h3>
+                                            <p>November 29, 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-post">
+                                    <div class="rec-post-thumb me-3">
+                                        <img src="assets/img/blog-big-1-1.jpg" class="img-fluid" alt="blog">
+                                    </div>
+                                    <div class="rec-post-dec">
+                                        <div class="ms-2">
+                                            <h3>
+                                                <a href="#">How to Clean Your Home Faster</a>
+                                            </h3>
+                                            <p>November 29, 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-post">
+                                    <div class="rec-post-thumb me-3">
+                                        <img src="assets/img/blog-big-1-1.jpg" class="img-fluid" alt="blog">
+                                    </div>
+                                    <div class="rec-post-dec">
+                                        <div class="ms-2">
+                                            <h3>
+                                                <a href="#">How to Clean Your Home Faster</a>
+                                            </h3>
+                                            <p>November 29, 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside class="widget categories-widget">
+                            <div class="widget-wrapper">
+                                <div class="widget-title">
+                                    <h3>Categories</h3>
+                                </div>
+                                <div class="widget-body">
+                                    <ul class="list-unstyled">
+                                        <li class="border-bottom"><a href="#">Business</a></li>
+                                        <li class="border-bottom"><a href="#">Cleaning</a></li>
+                                        <li class="border-bottom"><a href="#">Consultant</a></li>
+                                        <li class="border-bottom"><a href="#">Creative</a></li>
+                                        <li class="border-bottom"><a href="#">Technology</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside class="widget categories-widget">
+                            <div class="widget-wrapper">
+                                <div class="widget-title">
+                                    <h3>Tags</h3>
+                                </div>
+                                <div class="tag-btn">
+                                    <a href="#" class="rox-sm-btn">Business</a>
+                                    <a href="#" class="rox-sm-btn">Clean</a>
+                                    <a href="#" class="rox-sm-btn">Consult</a>
+                                    <a href="#" class="rox-sm-btn">Design</a>
+                                    <a href="#" class="rox-sm-btn">Kit</a>
+                                    <a href="#" class="rox-sm-btn">room</a>
+                                    <a href="#" class="rox-sm-btn">tech</a>
+                                    <a href="#" class="rox-sm-btn">useability</a>
+                                    <a href="#" class="rox-sm-btn">ux</a>
+                                </div>
+                            </div>
+                        </aside>
+                        <!-- Sidebar -->
+                        <aside class="sidebar-bannar">
+                            <div class="bannar-wrapper">
+                                <img src="assets/img/sidebar-banner-1.jpg" class="img-fluid" alt="sidebar img">
+                                <div class="bannar-text">
+                                    <p>Add bannar</p>
+                                </div>
+                            </div>
+
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row pb-5 footer-border-bottom">
+                <div class="col-md-3">
+                    <div class="footer-widget custom-html-widget">
+                        <div class="footer-widget-title">
+                            <h3>About Company</h3>
+                        </div>
+                        <div class="footer-desc">
+                            <p>Sed ut perspiciati unde omnis iste natus error sit voluptatem accusantium emque
+                                laudantium totam rem aperiam</p>
+                        </div>
+                        <div class="footer-logo">
+                            <img src="assets/img/logo-white.png" class="img-fluid" alt="Footer Logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget footer-nav-widget">
+                        <div class="footer-widget-title">
+                            <h3>Quick Links</h3>
+                        </div>
+                        <nav class="social-links">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Residential Interior</a></li>
+                                <li><a href="#">Commercial Interior</a></li>
+                                <li><a href="#">Industrial Interior</a></li>
+                                <li><a href="#">Roof Servicing</a></li>
+                                <li><a href="#">Color Mixing</a></li>
+                                <li><a href="#">Painting & Decoration</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget custom-html-widget">
+                        <div class="footer-widget-title">
+                            <h3>Contact Us</h3>
+                        </div>
+                        <ul class="list-unstyled custom-html-widget-list">
+                            <li>
+                                <div class="widget-info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="widget-info-text">
+                                    <h4>Locations</h4>
+                                    <a href="#">30 Main Street, New York</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="widget-info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="widget-info-text">
+                                    <h4>Email Us</h4>
+                                    <a href="#">support@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="widget-info-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="widget-info-text">
+                                    <h4>Phone Us</h4>
+                                    <a href="#">+012 (344) 678 99</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget subscribe-widget">
+                        <div class="footer-widget-title">
+                            <h3>Newsletter</h3>
+                        </div>
+                        <div class="widget-body">
+                            <p>Sed ut perspiciati unde omnis iste natus error sit voluptatem accusantium</p>
+                            <form action="#">
+                                <input type="text" placeholder="enter your email">
+                                <button type="submit" class="rox-md-btn">Subscribe <i
+                                        class="fas fa-arrow-right"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="row footer-bottom">
+                <div class="col-md-6">
+                    <div class="social-nav-links">
+                        <ul class="list-unstyled d-flex ">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-end">&copy; 2021 Roxce All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

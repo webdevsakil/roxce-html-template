@@ -1,0 +1,39 @@
+.post-meta {
+    ul {
+        li {
+            list-style: none;
+            text-transform: uppercase;
+            font-size: map-get($font-size, xsm);
+            font-weight: map-get($font-weight, bold);
+            margin: 0px 10px;
+            transition: all ease-in 0.4s;
+            &:hover {
+                color: map-get($colors, greenColor);
+                i {
+                    color: map-get($colors, greenColor);
+                }
+            }
+            i {
+                color: map-get($colors, yellowColor);
+                margin-right: 5px;
+            }
+        }
+    }
+}
+.post-title {
+    a {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: map-get($font-size, xl);
+        font-weight: map-get($font-weight, bold);
+        transition: color ease-in 0.4s;
+    }
+    &:hover {
+        a {
+            color: map-get($colors, yellowColor);
+        }
+    }
+    .post-excerpt {
+        line-height: 20px;
+    }
+}

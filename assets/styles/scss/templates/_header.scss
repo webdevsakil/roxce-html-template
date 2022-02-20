@@ -1,0 +1,265 @@
+header {
+    position: relative;
+    .top-header-wrapper {
+        background-color: map-get($colors, warning);
+    }
+    .top-header {
+        padding: 8px 20px;
+
+        ul {
+            li {
+                padding: 0px 20px;
+                i {
+                    color: map-get($colors, yellowColor);
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+    .nav-container {
+        padding: 20px 0px;
+        .nav-wrapper {
+            .logo {
+                a {
+                    text-decoration: none;
+                    img {
+                        width: 168px;
+                    }
+                }
+            }
+            .main-nav {
+                margin-top: 15px;
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        a {
+                            text-decoration: none;
+                            display: inline-block;
+                            margin: 0px 20px;
+                            font-size: map-get($font-size, md);
+                            font-weight: map-get($font-weight, medium);
+                            text-transform: capitalize;
+                            transition: color ease-in 0.2s;
+                            &:hover {
+                                color: map-get($colors, yellowColor);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .has-children {
+            position: relative;
+            &::before {
+                position: absolute;
+                font-family: "FontAwesome";
+                top: 2px;
+                right: 0px;
+                content: "\f078";
+                font-size: 12px;
+            }
+            .dropdown-items {
+                position: absolute;
+                top: 20px;
+                background-color: map-get($colors, secondary);
+                width: 200px;
+                padding-top: 0px;
+                border-radius: 5px;
+                border-top-right-radius: 50px;
+                border-top-left-radius: 50px;
+                display: none;
+                animation-name: BottomToTop;
+                animation-duration: 0.6s;
+                li {
+                    padding: 5px 0px !important;
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+            &:hover {
+                &::before {
+                    color: map-get($colors, yellowColor);
+                }
+            }
+            &:hover {
+                .dropdown-items {
+                    display: block;
+                }
+            }
+        }
+    }
+    @media all and (max-width: 750px) {
+        .top-header {
+            display: none;
+        }
+    }
+
+    // Navigation Modal
+    .navigation-modal {
+        display: none;
+        width: 465px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+        background-color: map-get($colors, secondary);
+        padding: 50px 30px;
+        height: 100%;
+        overflow-y: scroll;
+        .navigation-wrapper {
+            .modal-content-area {
+                .modal-top {
+                    img {
+                        width: 168px;
+                    }
+                    button {
+                        background-color: map-get($colors, yellowColor);
+                        color: map-get($colors, secondary);
+                        border: none;
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        font-size: 20px;
+                    }
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid #dedede;
+                    padding-bottom: 10px;
+                }
+                .search-form {
+                    input {
+                        border: none;
+                        outline: none;
+                        &::placeholder {
+                            color: map-get($colors, primary) !important;
+                        }
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                    .input-group-text {
+                        background: transparent;
+                        border: none;
+                    }
+                }
+                .gallary{
+                    img{
+                        width: 112px;
+                        height: 112px;
+                        margin:5px;
+                    }
+                }
+            }
+        }
+    }
+    .righttoleft{
+        animation-name: rightToLeft;
+        animation-duration: 1s;
+    }
+   
+    // Gm Error
+    .gm-error {
+        padding: 20px 50px;
+        background-color: map-get($colors, light);
+        text-align: center;
+        margin-top: 15px;
+        .gm-error-icon {
+            div {
+                height: 40px;
+                width: 40px;
+                background-color: map-get($colors, gray-dark);
+                display: inline-block;
+                border-radius: 50%;
+                i {
+                    line-height: 40px;
+                    color: map-get($colors, secondary);
+                }
+            }
+        }
+        .gm-error-title {
+            font-size: map-get($font-size, xlg);
+            line-height: 30px;
+            margin-top: 10px;
+        }
+        .gm-error-info {
+            margin-top: 10px;
+            color: map-get($colors, primary);
+            font-size: map-get($font-size, xsm);
+        }
+    }
+
+    .sidebar-contact-info {
+        cursor: pointer;
+        h3 {
+            margin: 15px 0px;
+            font-size: map-get($font-size, xlg);
+            font-weight: map-get($font-weight, medium);
+            color: map-get($colors, primary);
+        }
+        li {
+            margin: 5px 0px;
+            color: map-get($colors, icon-color);
+            font-size: map-get($font-size, md);
+            font-weight: map-get($font-weight, medium);
+            transition: all ease-in 0.3s;
+            &:hover {
+                .icon {
+                    background-color: map-get($colors, greenColor);
+                    color: map-get($colors, secondary);
+                }
+                color: map-get($colors, primary);
+            }
+        }
+        .icon {
+            display: inline-block;
+            border: 1px solid map-get($colors, light-gray);
+            text-align: center;
+            line-height: 40px;
+            color: map-get($colors, icon-color);
+            margin-right: 15px;
+        }
+    }
+    .social-modal {
+        ul {
+            li {
+                a {
+                    transition: all ease-in-out 0.4s;
+                    i {
+                        color: map-get($colors, greenColor);
+                    }
+                    &:hover {
+                        background-color: map-get($colors, greenColor);
+                        i {
+                            color: map-get($colors, secondary) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Mobile Navbar in modal
+.mobile-nav{
+    ul{
+        li{
+            border-bottom: 1px solid #dedede;
+            padding:10px 0px;
+            a{
+                text-decoration: none;
+                color:map-get($colors, primary );
+                font-size: map-get($font-size,xsm );
+                font-weight: map-get($font-weight, semi-bold );
+                text-transform: uppercase;
+                &:hover{
+                    color:map-get($colors, greenColor );
+                }
+            }
+        }
+       
+    }
+}
+

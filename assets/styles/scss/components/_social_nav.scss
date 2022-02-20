@@ -1,0 +1,23 @@
+//Social Links
+.social-nav-links {
+    li {
+        line-height: 70px;
+        margin: 0px 5px;
+        a {
+            background-color: map-get($colors, light-gray);
+            @include socialIcon;
+            &:hover {
+                background-color: map-get($colors, yellowColor);
+                i {
+                    color: map-get($colors, secondary);
+                }
+            }
+            i {
+                color: map-get($colors, yellowColor);
+            }
+        }
+    }
+}
+.icon {
+    @include socialIcon;
+}

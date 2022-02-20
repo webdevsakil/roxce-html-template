@@ -1,0 +1,122 @@
+.hero {
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hero-container {
+        .page-title {
+            color: map-get($colors, secondary);
+            z-index: 100;
+        }
+        nav {
+            li {
+                font-size: map-get($font-size, "md");
+                color: map-get($colors, secondary);
+                font-weight: map-get($font-weight, "medium");
+            }
+            .active {
+                color: map-get($colors, "yellow");
+            }
+        }
+    }
+}
+//Main Content
+#mainContent {
+    margin-top: 130px;
+    .post-contents {
+        padding: 40px 60px;
+    }
+
+    article {
+        margin: 20px 0px;
+    }
+    .video {
+        .post-thumbnails {
+            position: relative;
+            .modal-trigger {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                button {
+                    background: transparent;
+                    border: none;
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 50%;
+                    background-color: map-get($colors, secondary);
+                    i {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .slider-wrapper{
+        position: relative;
+        .controls-wrapper{
+            position: absolute;
+            top:50%;
+            padding: 0px 7%;
+            transform: translateY(-50%);
+            width: 100%;
+            .controls{
+               display: flex;
+               justify-content: space-between;
+               width: 100%;
+                button{
+                    background: transparent;
+                    border:none;
+                    outline: none;
+                    span{
+                        color:#fff;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#youtubeVideo{
+    .modal-content{
+        padding: 0;
+        .modal-body{
+          border:0;
+            
+        }
+    }
+}
+.sidebar {
+    margin-top: 70px;
+    .sidebar-bannar {
+        margin-top: 30px;
+        padding: 40px;
+        background: map-get($colors, light);
+        .bannar-wrapper {
+            position: relative;
+            .bannar-text {
+                height: 90px;
+                width: 160px;
+                background: map-get($colors, secondary);
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                p {
+                    text-align: center;
+                    line-height: 90px;
+                    font-weight: map-get($font-weight, bold);
+                    text-transform: uppercase;
+                    color: map-get($colors, primary);
+                    font-size: map-get($colors, lg);
+                }
+            }
+        }
+    }
+}
